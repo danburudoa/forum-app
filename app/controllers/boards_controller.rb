@@ -6,4 +6,50 @@ class BoardsController < ApplicationController
       @boards = Board.includes(:user)
     end
     
-   
+    def new
+       @board = Board.new
+    end
+ 
+    def create
+       @board = Board.new(board_params)
+       if @board.save
+          redirect_to root_path
+       else
+          render :new
+       end
+    end
+    
+    def show  
+       @comment = Comment.new
+       @comments = @board.comments.includes(:user)
+       @comment_page = Comment.order(created_at: :desc).page(params[:page]).per(10)
+    end
+ 
+    def edit
+       
+    end
+ 
+    def update
+       @board.update(board_params)
+       if @board.save
+          redirect_to root_path
+       else 
+          render :edit
+       end
+    end
+ 
+    def destroy
+      @board.destroy
+      redirect_to root_path
+    end
+ 
+    private
+ 
+    def board_params
+       params.require(:board).permit(:title,:text,:image).merge(user_id: current_user.id)
+    end
+ 
+    def set_tweet
+       @board = Board.find(params[:id])
+     end
+ end
