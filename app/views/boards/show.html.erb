@@ -43,13 +43,7 @@
 
           <!---ページネーション--->
           <div class="nav-links">
-             <a class="prev page-numbers" href="https://techacademy.jp/magazine/category/webdesign/">«</a><!-- 現在の前のページへのリンク -->
-             <a class="page-numbers" href="https://techacademy.jp/magazine/category/webdesign/">1</a>
-             <span class="page-numbers current">2</span><!-- 現在閲覧しているページ -->
-             <a class="page-numbers" href="https://techacademy.jp/magazine/category/webdesign/page/3">3</a>
-             <span class="page-numbers dots">…</span>
-             <a class="page-numbers" href="https://techacademy.jp/magazine/category/webdesign/page/27">27</a>
-             <a class="next page-numbers" href="https://techacademy.jp/magazine/category/webdesign/page/3">»</a><!-- 現在の次のページへのリンク -->
+             <%= paginate @comment_page,class: :prev%>
           </div>
 
           <!----コメント表示-->
