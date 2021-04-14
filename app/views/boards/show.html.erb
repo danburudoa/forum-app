@@ -29,10 +29,8 @@
           <!--パンくずリストここまで-->
     
 
-          <div class="head-area">
-           
-              <%= image_tag (@board.image), class: :show_img %>
-            
+          <div class="head-area">    
+              <%= image_tag (@board.image), class: :show_img %>    
             <div class="head-right">
               <h1><%= "#{@board.title}"%></h1>
               <h3 class="show_text"><%= "#{@board.text}"%></h3>
@@ -44,6 +42,7 @@
           <!---ページネーション--->    
              <%= paginate @comment_page%>
           <!----コメント表示-->
+
           <div class="board__comments">
              <ul class="comments_lists">
                 <% if @comments %>
@@ -51,7 +50,7 @@
                     <li class="comments_list">
                       <div class="comments_wrap">
                         <p>
-                          <%= link_to "#{comment.user.nickname}", "/users/#{comment.user.id}", class: :comment_user %>
+                          <%= link_to "#{comment.user.nickname}", class: :comment_user %>
                           <%= l comment.created_at%>
                         </p>
                         <p class="comment_text"><%= comment.text %></p>

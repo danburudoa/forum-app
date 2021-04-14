@@ -4,12 +4,8 @@
 			<!-- /.header__logo -->
 			<nav class="header__nav">
 				<ul>
-					<li><a href="#a-tab" class="is-active">人気記事</a></li>
-					<li><a href="#a-card">最新記事</a></li>					
+					<li><a href="#a-card"　class="is-active">最新記事</a></li>					
 				</ul>
-				<%#if user_signed_in? && current_user.id%>
-				<div class="edit"><%#= link_to current_user.name, edit_user_registration_path(current_user), class: 'editbtn' %></div>
-				<%# end %>
 			</nav><!-- /.header__nav -->
 		</div><!-- /.header__inner -->
          </header><!-- /.header -->
@@ -38,7 +34,7 @@
 		<div class="mainvisual__content">
 			<div class="mainvisual__title">一番伝えたい<br class="hidden-tab hidden-pc">ことを書く</div>
 			<!-- /.mainvisual__title -->
-			<div class="mainvisual__lead">人生哲学を議論</div><!-- /.mainvisual__lead -->
+			<div class="mainvisual__lead">意見をたくさんもらおう</div><!-- /.mainvisual__lead -->
 			<% if user_signed_in? %>
 			  <div class="mainvisual__button"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'button-mainvisual'%></div>
 			  <div class="mainvisual__button"><%= link_to '投稿する', new_board_path, class: 'button-mainvisual'%></div>
