@@ -41,15 +41,10 @@
             </div>
           </div>
 
-          <!---ページネーション--->
-          <div class="nav-links">
-             <%= paginate @comment_page,class: :prev%>
-          </div>
-
+          <!---ページネーション--->    
+             <%= paginate @comment_page%>
           <!----コメント表示-->
-
           <div class="board__comments">
-             <%# // ログインしているユーザーには上記を表示する %>
              <ul class="comments_lists">
                 <% if @comments %>
                   <% @comments.each do |comment| %>
