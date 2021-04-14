@@ -4,6 +4,7 @@ class BoardsController < ApplicationController
  
     def index
       @boards = Board.includes(:user)
+      @board_page = Board.all.page(params[:page]).per(10)
     end
     
     def new
@@ -22,7 +23,7 @@ class BoardsController < ApplicationController
     def show  
        @comment = Comment.new
        @comments = @board.comments.includes(:user)
-       @comment_page = Comment.order(created_at: :desc).page(params[:page]).per(10)
+       @comment_page = Comment.all.page(params[:page]).per(10)
     end
  
     def edit

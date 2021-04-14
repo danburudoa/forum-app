@@ -29,10 +29,8 @@
           <!--パンくずリストここまで-->
     
 
-          <div class="head-area">
-           
-              <%= image_tag (@board.image), class: :show_img %>
-            
+          <div class="head-area">    
+              <%= image_tag (@board.image), class: :show_img %>    
             <div class="head-right">
               <h1><%= "#{@board.title}"%></h1>
               <h3 class="show_text"><%= "#{@board.text}"%></h3>
@@ -41,28 +39,18 @@
             </div>
           </div>
 
-          <!---ページネーション--->
-          <div class="nav-links">
-             <a class="prev page-numbers" href="https://techacademy.jp/magazine/category/webdesign/">«</a><!-- 現在の前のページへのリンク -->
-             <a class="page-numbers" href="https://techacademy.jp/magazine/category/webdesign/">1</a>
-             <span class="page-numbers current">2</span><!-- 現在閲覧しているページ -->
-             <a class="page-numbers" href="https://techacademy.jp/magazine/category/webdesign/page/3">3</a>
-             <span class="page-numbers dots">…</span>
-             <a class="page-numbers" href="https://techacademy.jp/magazine/category/webdesign/page/27">27</a>
-             <a class="next page-numbers" href="https://techacademy.jp/magazine/category/webdesign/page/3">»</a><!-- 現在の次のページへのリンク -->
-          </div>
-
+          <!---ページネーション--->    
+             <%= paginate @comment_page%>
           <!----コメント表示-->
 
           <div class="board__comments">
-             <%# // ログインしているユーザーには上記を表示する %>
              <ul class="comments_lists">
                 <% if @comments %>
                   <% @comments.each do |comment| %>
                     <li class="comments_list">
                       <div class="comments_wrap">
                         <p>
-                          <%= link_to "#{comment.user.nickname}", "/users/#{comment.user.id}", class: :comment_user %>
+                          <%= link_to "#{comment.user.nickname}", class: :comment_user %>
                           <%= l comment.created_at%>
                         </p>
                         <p class="comment_text"><%= comment.text %></p>
