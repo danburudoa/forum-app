@@ -40,7 +40,7 @@ https://forum-original.herokuapp.com/
 ```
 [![Image from Gyazo](https://i.gyazo.com/1a5dbf898384c7d05cdf1a2927173a55.jpg)](https://gyazo.com/1a5dbf898384c7d05cdf1a2927173a55)
 
-# 目指した課題解決
+# mm
 自分の考えに対して、他者はどのような考えを持つのかを知るため。また、フィードバックをもらい、それを投稿者自身の人生に活かしていけるような掲示板アプリケーションを目指した。
 
 #  開発スキル
