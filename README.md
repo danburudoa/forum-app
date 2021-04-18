@@ -22,23 +22,23 @@ https://forum-original.herokuapp.com/
 投稿機能
 ```
 投稿後トップページへ遷移するGIF
-[![Image from Gyazo](https://i.gyazo.com/b2c4d5335c6bbea3aadb4ee072538570.gif)](https://gyazo.com/b2c4d5335c6bbea3aadb4ee072538570)
+[![Image from Gyazo](https://i.gyazo.com/5a10e5f19ea73371c7ad96b51b93638f.gif)](https://gyazo.com/5a10e5f19ea73371c7ad96b51b93638f)
 ```
 コメント投稿機能
 ```
-[![Image from Gyazo](https://i.gyazo.com/9a36870c73ec68f805ef3811c220aced.gif)](https://gyazo.com/9a36870c73ec68f805ef3811c220aced)
+[![Image from Gyazo](https://i.gyazo.com/f0f742271863f10a257fe69d67212199.gif)](https://gyazo.com/f0f742271863f10a257fe69d67212199)
 
 # jQuery
 ```
 スムーススクロール : 最新テーマの数が増えてきたときに、簡単に移動できるよう実装した。
 ```
-[![Image from Gyazo](https://i.gyazo.com/f4b900c7ee64e93f7ab71bfa19a96c00.gif)](https://gyazo.com/f4b900c7ee64e93f7ab71bfa19a96c00)
+[![Image from Gyazo](https://i.gyazo.com/ffa847b456b8f22d622a12a4842b7c97.gif)](https://gyazo.com/ffa847b456b8f22d622a12a4842b7c97)
 
 # ページネーション
 ```
-コメントが11件以上投稿された時、ページネーションが表示される
+コメントが多くなった時、コメントをみやすくするために実装した。
 ```
-[![Image from Gyazo](https://i.gyazo.com/1a5dbf898384c7d05cdf1a2927173a55.jpg)](https://gyazo.com/1a5dbf898384c7d05cdf1a2927173a55)
+[![Image from Gyazo](https://i.gyazo.com/90f7f0fe958df63156c2d305d8b70777.gif)](https://gyazo.com/90f7f0fe958df63156c2d305d8b70777)
 
 # 目指した課題解決
 自分の考えに対して、他者はどのような考えを持つのかを知るため。また、フィードバックをもらい、それを投稿者自身の人生に活かしていけるような掲示板アプリケーションを目指した。
