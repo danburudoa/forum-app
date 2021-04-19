@@ -12,7 +12,7 @@ amazon:
  bucket: forum2021
  access_key_id: <%= ENV['AKIATNTB6LY6OH746O63'] %>
  secret_access_key:  <%= ENV['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'] %>
- 
+
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 # amazon:
 #   service: S3
@@ -20,7 +20,7 @@ amazon:
 #   secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
 #   region: us-east-1
 #   bucket: your_own_bucket
-
+a
 # Remember not to checkin your GCS keyfile to a repository
 # google:
 #   service: GCS
